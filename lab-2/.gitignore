@@ -1,0 +1,16 @@
+# SSH keys: private key must never be committed
+/keypair
+/keypair.pub
+/keypair/
+# Terraform provider downloads and local state
+/.terraform/
+*.tfstate
+*.tfstate.*
+crash.log
+crash.*.log
+# Local variable files may contain AWS credentials or other secrets
+*.tfvars
+*.tfvars.json
+# Terraform CLI configuration files
+.terraformrc
+terraform.rc
